@@ -11,18 +11,6 @@ services:
     networks:
       - app-network
 
-  backend1:
-    image: python:3.9
-    command: python3 ~/opt/Projeto_Seguranca_da_Informacao-Pesquisa_de_Mercado-/so_main.py
-    networks:
-      - app-network
-
-  backend2:
-    image: python:3.9
-    command: python3 ~/opt/Projeto_Seguranca_da_Informacao-Pesquisa_de_Mercado-/so_main.py
-    networks:
-      - app-network
-
 networks:
   app-network:
     driver: bridge
