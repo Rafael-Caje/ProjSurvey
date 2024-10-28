@@ -1,14 +1,5 @@
 services:
   nginx:
-    image: nginx:latest
+    build: .
     ports:
       - "8081:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-    restart: unless-stopped
-    networks:
-      - app-network
-
-networks:
-  app-network:
-    driver: bridge
