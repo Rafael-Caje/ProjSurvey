@@ -1,5 +1,7 @@
 services:
   nginx:
-    build: .
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile  # Ajuste o caminho conforme necessário
     ports:
       - "8081:8081"
